@@ -1,9 +1,19 @@
-<html>
+<!DOCTYPE html>
 
 <body>
     test
+    <br>
+    <button onclick="komunikat()">komunikat</button>
+    <button onclick="window_close()">window.close</button>
+    <div id="komunikat"></div>
 </body>
 <script>
-    console.info('started...');
+    function komunikat() {
+        document.getElementById('komunikat').innerText = 'komunikat: ' + new Date();
+    }
+    function window_close() {
+        console.info('przed window.close()');
+        window.close();
+    }
 </script>
 </html>
