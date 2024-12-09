@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<body>
+<body onload="onload_handler()">
     test
     <br>
     <button onclick="komunikat()">komunikat</button>
@@ -14,6 +14,9 @@
     function window_close() {
         console.info('przed window.close()');
         window.close();
+    }
+    function onload_handler() {
+        console.info('call onload_handler...');
     }
 </script>
 </html>
