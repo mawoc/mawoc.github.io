@@ -1,1 +1,14 @@
-
+<!DOCTYPE html>
+<head>
+  <link rel="icon" href="data:,">
+  <script>
+    function onload_handler() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const close = urlParams.get('close');
+      console.info("close value: " + close);
+    }
+  </script>
+</head>
+<body onload="onload_handler()">
+  <a href="https://mawoc.github.io/5_payment.html">go to payment</a>
+</html>
