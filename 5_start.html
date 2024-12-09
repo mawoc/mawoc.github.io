@@ -6,6 +6,10 @@
       const urlParams = new URLSearchParams(window.location.search);
       const close = urlParams.get('close');
       console.info("close value: " + close);
+      if (close == '1') {
+        console.info('closing with window.close()');
+        window.close();
+      }
     }
   </script>
 </head>
