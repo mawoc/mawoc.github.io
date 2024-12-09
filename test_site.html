@@ -1,23 +1,10 @@
 <!DOCTYPE html>
-
 <body onload="onload_handler()">
-    test
-    <br>
-    <button onclick="komunikat()">komunikat</button>
-    <button onclick="window_close()">window.close</button>
-    <div id="komunikat"></div>
+    end payment dev
 </body>
 <script>
-    function komunikat() {
-        document.getElementById('komunikat').innerText = 'komunikat: ' + new Date();
-    }
-    function window_close() {
-        console.info('przed window.close()');
-        window.close();
-    }
     function onload_handler() {
-        console.info('call onload_handler...');
-        console.info('zamykam window.close()');
+        console.info('closing window with window.close()');
         window.close();
     }
 </script>
