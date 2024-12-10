@@ -4,10 +4,20 @@
   <meta http-equiv="refresh" content="0; url=opoleplus://internal?request=endpayment" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta charset="UTF-8">
+  <script>
+    function onload_handler() {
+      setTimeout(function() {
+        const elem = document.getElementById("message");
+        if (elem) {
+          elem.style.display = "block";
+        }
+      }, 3000);
+    }
+  </script>
 </head>
-<body style>
-  <div style="text-align: center; line-height: 1.4; padding: 10% 5% 10% 5%; font-family: Arial, Helvetica, sans-serif; font-size: larger;">
-    Jeśli okno nie zamknie się automatycznie, prosimy o ręczne zamknięcie i powrót do aplikacji.
+<body onload="onload_handler()">
+  <div id="message" style="text-align: center; line-height: 1.4; padding: 10% 5% 10% 5%; font-family: Arial, Helvetica, sans-serif; font-size: larger;display:none">
+    Za chwilę nastąpi powrót do aplikacji. Jeśli to okno nie zamknie się automatycznie, możesz zrobić to ręcznie korzystając z przycisku w lewym górnym rogu.
   </div>
 </body>
 </html>
